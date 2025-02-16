@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Champions Trophy Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header class="animate__animated animate__fadeIn">
+        <div class="logo">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <h1>Champions Trophy 2025</h1>
+        <p class="subtitle">Upcoming Matches Schedule</p>
+        <div class="header-decoration"></div>
+    </header>
+
+    <main>
+        <div class="matches-container">
+            <!-- Matches will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <template id="match-template">
+        <div class="match-card">
+            <div class="match-header">
+                <span class="match-date"></span>
+                <span class="match-venue"><i class="fas fa-map-marker-alt"></i> <span class="venue-text"></span></span>
+            </div>
+            <div class="teams-container">
+                <div class="team team-1">
+                    <div class="flag-container">
+                        <img class="team-flag" src="" alt="">
+                        <div class="flag-overlay"></div>
+                    </div>
+                    <span class="team-name"></span>
+                </div>
+                <div class="match-info">
+                    <div class="countdown">
+                        <div class="time-section">
+                            <span class="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="time-section">
+                            <span class="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="time-section">
+                            <span class="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="time-section">
+                            <span class="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <div class="versus">
+                        <span class="vs-text">VS</span>
+                        <div class="vs-decoration"></div>
+                    </div>
+                </div>
+                <div class="team team-2">
+                    <div class="flag-container">
+                        <img class="team-flag" src="" alt="">
+                        <div class="flag-overlay"></div>
+                    </div>
+                    <span class="team-name"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
